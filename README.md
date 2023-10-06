@@ -2,7 +2,7 @@
 
 <p align="center">
 Aplicação web desenvolvida durante o projeto Discover, programa gratuito e exclusivo da RocketSeat. <br/>
-<a href="https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito">Estude esse projeto em formato de vídeo clicando aqui.</a>
+<a href="https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito" target="_blank">Estude esse projeto em formato de vídeo clicando aqui.</a>
 </p>
 
 <p align="center">
