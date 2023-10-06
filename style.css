@@ -25,7 +25,7 @@
     --stroke:rgba(0, 0, 0, 0.5);
     --surface: rgba(255, 255, 255, 0.05);
     --surface-hover:rgba(255, 255, 255, 0.3);
-    --highlight:rgba(255, 255, 255, 0.1);
+    --highlight:rgba(0, 0, 0, 0.1);
     --background: url(./assets/images/bg-mobile-light.jpg) no-repeat top center/cover;
     --github-icon: url(./assets/icons/dark-github.svg);
     --instagram-icon: url(./assets/icons/dark-instagram.svg);
@@ -87,15 +87,19 @@ main {
     z-index: 1;
     
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%);      
 
-    
-    transition: position .3s ease;
+    animation: slide-out .3s forwards;
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight);
+    transition: all .1s ease;
+    cursor: pointer;
 }
 
 .light #switch button {
-    right: -2px;
-    left: initial;
+    animation: slide-in .3s forwards;
 }
 
 #switch span {
@@ -188,5 +192,25 @@ footer a:hover {
 
     .light {
         --background: url(./assets/images/bg-desktop-light.jpg) no-repeat top center/cover;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 54%;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 54%;
+    }
+
+    to {
+        left: 0;
     }
 }
